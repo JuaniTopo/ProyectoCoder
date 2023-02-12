@@ -5,7 +5,7 @@ from AppCoder.models import Curso
 
 
 def curso(self):
-    curso = Curso(nombre="Desarrollo Web", comision=19889)
+    curso = Curso(nombre="Desarrollo Python", comision=19889)
     curso.save()
     documentoDeTexto= f"--->Curso:{curso.nombre} comision: {curso.comision}"
     return HttpResponse(documentoDeTexto)
